@@ -25,7 +25,7 @@ import concurrent.futures
 import asyncio
 
 api_key = os.getenv("OpenAI_API_KEY")
-llm = ChatOpenAI(model="Qwen3-235B-A22B-Instruct-2507", base_url="http://10.111.32.151:3001/v1", api_key=api_key,
+llm = ChatOpenAI(model="Qwen3-235B-A22B-Instruct-2507", base_url="http://localhost:11434/v1", api_key=api_key,
                  temperature=0.0)
 agent_template = """
 你现在是一个{role}。这里是一些已知信息：
