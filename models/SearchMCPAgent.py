@@ -25,9 +25,9 @@ from mcp.server.fastmcp import Context
 from models.mcp_tools import DuckDuckGoSearcher
 
 api_key = os.getenv("OpenAI_API_KEY")
-# llm = ChatOpenAI(model="GW-DeepSeek_R1", base_url="http://10.111.32.151:3001/v1", api_key=api_key,
+# llm = ChatOpenAI(model="DeepSeek_R1", base_url="http://locakhost:11434/v1", api_key=api_key,
 #                  temperature=0.0)
-llm = ChatOpenAI(model="qwq:32b", base_url="http://10.81.38.110:11434/v1", api_key=api_key,
+llm = ChatOpenAI(model="qwq:32b", base_url="http://localhost:11434/v1", api_key=api_key,
                  temperature=0.0)
 agent_template = """
 你现在是一个{role}。这里是一些已知信息：
