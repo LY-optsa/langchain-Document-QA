@@ -79,7 +79,7 @@ os.makedirs(db_dir, exist_ok=True)
 # 数据库路径
 EXCEL_DB_PATH = os.path.join(db_dir, "excel_conversations.db")
 PDF_DB_PATH = os.path.join(db_dir, "pdf_conversations.db")
-# llm = ChatOllama(model='qwen2.5:14b', base_url='http://10.81.38.110:11434/v1', 
+# llm = ChatOllama(model='qwen2.5:14b', base_url='http://localhost:11434/v1', 
 #                  temperature=0.0, top_p=0.95, frequency_penalty=0.0)
 api_key = os.getenv("OpenAI_API_Key")
 llm = ChatOpenAI(model='Qwen3-235B-A22B-Instruct-2507', api_key=api_key, base_url='http://localhost:11434/v1', 
