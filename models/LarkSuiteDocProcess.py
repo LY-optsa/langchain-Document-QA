@@ -7,8 +7,8 @@ def get_access_token():
         "Content-Type": "application/json"
     }
     data = {
-    "app_id": "cli_a9b5c4a31379dbcc",
-    "app_secret": "8JnwXAQLpQ5YqPamNYEZ6eWeoN5hLG6K"
+    "app_id": "cli_a9b5c4a31379dc",
+    "app_secret": "8JnwXAQLpQ5YqPamNYEZ6eWeoN5hLG6Kfa"
     }
     response = requests.post(url, headers=headers, data=json.dumps(data))
     if response.status_code == 200:
