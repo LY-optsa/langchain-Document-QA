@@ -1,6 +1,7 @@
 # Document QA FastAPI Application
 
 基于FastAPI的文档问答系统，支持Excel、PDF文档以及飞书在线文档的智能问答，具备自动外部检索能力和文件管理功能。
+项目仅供参考和学习
 
 ## 功能特性
 
